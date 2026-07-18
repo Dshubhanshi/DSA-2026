@@ -8,10 +8,10 @@ def find(arr:list, target:int):
     
     while left <= right:
         mid = (left + right)//2
-        if result == arr[mid]:
+        if target == arr[mid]:
             return mid
 
-        elif result >  arr[mid]:
+        elif target >  arr[mid]:
             left = mid+1
         else:
             right = mid -1
